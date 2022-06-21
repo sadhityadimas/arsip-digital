@@ -1,0 +1,170 @@
+import pandas as pd
+import streamlit as st
+from PIL import Image
+from bokeh.models.widgets import Div
+import streamlit as st
+import warnings
+warnings.filterwarnings('ignore')
+
+bpk_icon = Image.open("assets/BPK.ico")
+LOGO_IMAGE = "assets/BPK.png"
+st.set_page_config(
+    layout="centered", page_icon=bpk_icon, page_title="Index LHP BPK Perwakilan Sumsel", initial_sidebar_state="auto"
+) #layout use wide instead of centered
+
+col1, col2 = st.columns([2,5])
+with col1:
+    st.image(bpk_icon, width =150, use_column_width=True)
+with col2:
+    st.title("Arsip Digital")
+    st.subheader('BPK perwakilan Sumatera Selatan')
+
+option_2 = ''
+
+
+
+with st.sidebar:
+    col1, col2 = st.columns([1, 3])
+    with col1:
+        st.image(bpk_icon, width=150, use_column_width=True)
+
+    with col2:
+        st.write("BPK perwakilan Sumsel")
+
+    option = st.radio(
+        'Data apa yang ingin anda cari?',
+        ('Pemeriksaan', 'Non Pemeriksaan'))
+
+    if option == 'Pemeriksaan':
+        option_2 = st.selectbox(
+        'Pilih Subauditorat',
+        ('', 'Subauditorat Sumsel I', 'Subauditorat Sumsel II'))
+
+
+
+    elif option == 'Non Pemeriksaan':
+        option_2 = st.selectbox(
+            'Kesekretariatan',
+            ('', 'Sekretariat Perwakilan', 'Subbag Humas dan TU', 'Subbag SDM', 'Subbag Keuangan', 'Subbag Umum dan TI', 'Subbag Hukum'))
+
+if option_2 == '':
+    image = Image.open('assets/IMG-20210419-WA0112.jpg')
+    st.image(image, caption='BPK Perwakilan Sumsel')
+
+option_3 = '' #default value for option_3 so it won't throw any exception
+
+if option_2 == 'Subauditorat Sumsel I':
+     option_3 = st.selectbox(
+          'Pilih Entitas',
+          ( '',
+            'Kabupaten Ogan Komering Ilir',
+            'Kota Lubuk Linggau',
+            'Kabupaten Banyuasin',
+            'Kabupaten Ogan Ilir',
+            'Kabupaten Ogan Komering Ulu Timur',
+            'Kota Palembang',
+            'Kabupaten Penukal Abab Lematang Ilir',
+            'Kabupaten Musi Rawas Utara'))
+
+elif option_2 == 'Subauditorat Sumsel II':
+     option_3 = st.selectbox(
+          'Pilih Entitas',
+          ( '',
+            'Kabupaten Lahat',
+           'Kabupaten Musi Banyuasin',
+           'Kabupaten Ogan Komering Ulu Selatan',
+           'Kota Prabumulih',
+           'Kabupaten Muara Enim',
+           'Kabupaten Musi Rawas',
+           'Kabupaten Ogan Komering Ulu',
+           'Kota Pagar Alam',
+           'Kabupaten Empat Lawang'))
+
+elif option_2 == 'Sekretariat Perwakilan':
+    st.write("code not yet written")
+elif option_2 == 'Subbag Humas dan TU':
+    st.write("code not yet written")
+elif option_2 == 'Subbag SDM':
+    st.write("code not yet written")
+elif option_2 == 'Subbag Keuangan':
+    st.write("code not yet written")
+elif option_2 == 'Subbag Umum dan TI':
+    option_3 = st.selectbox('Pilih arsip', ('', 'Perangkat IT', 'Nota Dinas', 'Uncategorized'))
+elif option_2 == 'Subbag Hukum':
+    st.write("code not yet written")
+
+option_4 = ''
+
+if option_3 in ['Kabupaten Ogan Komering Ilir',
+            'Kota Lubuk Linggau',
+            'Kabupaten Banyuasin',
+            'Kabupaten Ogan Ilir',
+            'Kabupaten Ogan Komering Ulu Timur',
+            'Kota Palembang',
+            'Kabupaten Penukal Abab Lematang Ilir',
+            'Kabupaten Musi Rawas Utara'] :
+    option_4 = st.selectbox('Pilih LHP', ['', 'Laporan Keuangan', 'PDTT', 'Investigasi'])
+
+elif option_3 in ['Kabupaten Lahat',
+           'Kabupaten Musi Banyuasin',
+           'Kabupaten Ogan Komering Ulu Selatan',
+           'Kota Prabumulih',
+           'Kabupaten Muara Enim',
+           'Kabupaten Musi Rawas',
+           'Kabupaten Ogan Komering Ulu',
+           'Kota Pagar Alam',
+           'Kabupaten Empat Lawang'] :
+    option_4 = st.selectbox('Pilih LHP', ['', 'Laporan Keuangan', 'PDTT', 'Investigasi'])
+
+#block subbag umum
+elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Perangkat IT':
+    if st.button('Go to file'):
+        js = "window.open('https://drive.google.com/drive/folders/1820HL-PQjZnMBQUpXYZTQtpXNGqhYSYF?usp=sharing')"  # New tab or window
+        html = '<img src onerror="{}">'.format(js)
+        div = Div(text=html)
+        st.bokeh_chart(div)
+#blok setlan not finished!
+elif option_2 == 'Sekretariat Perwakilan':
+    if st.button('Go to file'):
+        js = "window.open('https://drive.google.com/drive/u/1/folders/1MWJTLFJcneqm--JoSUqb_2j4-oigBm_8')"  # New tab or window
+        html = '<img src onerror="{}">'.format(js)
+        div = Div(text=html)
+        st.bokeh_chart(div)
+
+#block humas tu not finish
+elif option_2 == 'Subbag Humas dan TU':
+    if st.button('Go to file'):
+        js = "window.open('https://drive.google.com/drive/folders/1820HL-PQjZnMBQUpXYZTQtpXNGqhYSYF?usp=sharing')"  # New tab or window
+        html = '<img src onerror="{}">'.format(js)
+        div = Div(text=html)
+        st.bokeh_chart(div)
+
+#block sdm not finish
+elif option_2 == 'Subbag SDM':
+    if st.button('Go to file'):
+        js = "window.open('https://drive.google.com/drive/folders/1820HL-PQjZnMBQUpXYZTQtpXNGqhYSYF?usp=sharing')"  # New tab or window
+        html = '<img src onerror="{}">'.format(js)
+        div = Div(text=html)
+        st.bokeh_chart(div)
+
+#block keuangan not finish
+elif option_2 == 'Subbag Keuangan':
+    if st.button('Go to file'):
+        js = "window.open('https://drive.google.com/drive/folders/1820HL-PQjZnMBQUpXYZTQtpXNGqhYSYF?usp=sharing')"  # New tab or window
+        html = '<img src onerror="{}">'.format(js)
+        div = Div(text=html)
+        st.bokeh_chart(div)
+
+#block hukum not finish
+elif option_2 == 'Subbag Hukum':
+    if st.button('Go to file'):
+        js = "window.open('https://drive.google.com/drive/folders/1820HL-PQjZnMBQUpXYZTQtpXNGqhYSYF?usp=sharing')"  # New tab or window
+        html = '<img src onerror="{}">'.format(js)
+        div = Div(text=html)
+        st.bokeh_chart(div)
+
+if option_4 != '' and option_4 in ['Laporan Keuangan', 'PDTT', 'Investigasi']:
+    year = st.slider(
+        "Tahun Arsip",
+        2015, 2022, (2018, 2019))
+
