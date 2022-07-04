@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run arsip_app.py
+web: sh setup.sh && streamlit run media_arsip.py
