@@ -4,3 +4,4 @@ pandas
 click==8
 pillow
 google-cloud-firestore
+bokeh
