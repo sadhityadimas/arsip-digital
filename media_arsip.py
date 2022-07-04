@@ -97,7 +97,7 @@ elif option_2 == 'Subbag Keuangan':
                                             'c', 'd', 'e',
                                             'Uncategorized'))
 elif option_2 == 'Subbag Umum dan TI':
-    option_3 = st.selectbox('Pilih arsip', ('', 'Nota Dinas Keluar','Nota Dinas Masuk',
+    option_3 = st.selectbox('Pilih arsip', ('', 'Nota Dinas Keluar','Nota Dinas Masuk', 'Nota Dinas',
                                             'Surat Keluar', 'Dokumen Kontrak', 'Laporan BMN',
                                             'Berita Acara', 'Formulir Peminjaman TI', 'Formulir Permintaan ATK', 'Uncategorized'))
 elif option_2 == 'Subbag Hukum':
@@ -142,6 +142,14 @@ elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Nota Dinas Masuk':
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
+
+elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Nota Dinas':
+    if st.button('Go to folder'):
+        js = "window.open('https://drive.google.com/drive/u/1/folders/1OJsc8PfbSl-d3F2lsN7yjyd_dixsD2ql?usp=sharing')"  # New tab or window
+        html = '<img src onerror="{}">'.format(js)
+        div = Div(text=html)
+        st.bokeh_chart(div)
+
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Surat Keluar':
     if st.button('Go to folder'):
         js = "window.open('https://drive.google.com/drive/folders/1lzOYQF2rt8Rlcb6ONkN6tYWJrm8cGmRb?usp=sharing')"  # New tab or window
