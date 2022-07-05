@@ -130,71 +130,71 @@ elif option_3 in ['Kabupaten Lahat',
 
 #block subbag umum
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Nota Dinas Keluar':
-    if st.button('Go to folder'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/11vlI8mOiU8iBUJ_vfgTYfCPjMuHcJWxP?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
 
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Nota Dinas Masuk':
-    if st.button('Go to folder'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1eyHRbs5aUHeNTMOqYEvHJ-t5sjFstVLV?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
 
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Nota Dinas':
-    if st.button('Go to folder'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/u/1/folders/1OJsc8PfbSl-d3F2lsN7yjyd_dixsD2ql?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
 
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Surat Keluar':
-    if st.button('Go to folder'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1lzOYQF2rt8Rlcb6ONkN6tYWJrm8cGmRb?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Dokumen Kontrak':
-    if st.button('Go to folder'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1c-ZqWi8tHez0YxoHDYTNImmBJhpVCiTy?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Laporan BMN':
-    if st.button('Go to folder'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1R90VfdH1DCyzQwaicTj6ZA5EJIWKv8t3?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Berita Acara':
-    if st.button('Go to folder'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1Ckps_sezLMBdppIlZAoobOmdPljaWxAO?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Formulir Peminjaman TI':
-    if st.button('Go to folder'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1820HL-PQjZnMBQUpXYZTQtpXNGqhYSYF?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Formulir Permintaan ATK':
-    if st.button('Go to folder'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1utHMEgPfeBj9F1Cve6feIdr7aOQY0BCy?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Uncategorized':
-    if st.button('Go to folder'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1YR-Fo_beW2YOoI_r5jRuicmy2X2_JoKk?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
 #blok setlan not finished!
 elif option_2 == 'Sekretariat Perwakilan':
-    if st.button('Go to folder'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/u/1/folders/1MWJTLFJcneqm--JoSUqb_2j4-oigBm_8')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
@@ -202,7 +202,7 @@ elif option_2 == 'Sekretariat Perwakilan':
 
 #block humas tu not finish
 elif option_2 == 'Subbag Humas dan TU':
-    if st.button('Go to file'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1820HL-PQjZnMBQUpXYZTQtpXNGqhYSYF?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
@@ -210,7 +210,7 @@ elif option_2 == 'Subbag Humas dan TU':
 
 #block sdm not finish
 elif option_2 == 'Subbag SDM':
-    if st.button('Go to file'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1820HL-PQjZnMBQUpXYZTQtpXNGqhYSYF?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
@@ -218,7 +218,7 @@ elif option_2 == 'Subbag SDM':
 
 #block keuangan not finish
 elif option_2 == 'Subbag Keuangan':
-    if st.button('Go to file'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1820HL-PQjZnMBQUpXYZTQtpXNGqhYSYF?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
@@ -226,7 +226,7 @@ elif option_2 == 'Subbag Keuangan':
 
 #block hukum not finish
 elif option_2 == 'Subbag Hukum':
-    if st.button('Go to file'):
+    if st.button('Klik saya'):
         js = "window.open('https://drive.google.com/drive/folders/1820HL-PQjZnMBQUpXYZTQtpXNGqhYSYF?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
