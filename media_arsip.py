@@ -145,7 +145,7 @@ elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Nota Dinas Masuk':
 
 elif option_2 == 'Subbag Umum dan TI' and option_3 == 'Nota Dinas':
     if st.button('Klik saya'):
-        js = "window.open('https://portal.bpk.go.id/sites/palembang/subbagumum/Arsip%20TI/DB%20ARSIP%20DIGITAL/Sekretariat/Subbag%20Umum%20dan%20TI/Nota%20Dinas')"  # New tab or window
+        js = "window.open('https://drive.google.com/drive/folders/1OJsc8PfbSl-d3F2lsN7yjyd_dixsD2ql?usp=sharing')"  # New tab or window
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
