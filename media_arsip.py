@@ -47,6 +47,12 @@ with st.sidebar:
             'Kesekretariatan',
             ('', 'Sekretariat Perwakilan', 'Subbag Humas dan TU', 'Subbag SDM', 'Subbag Keuangan', 'Subbag Umum dan TI', 'Subbag Hukum'))
 
+
+    st.write("Program Aktualisasi Diklatsar CPNS BPK 2022")
+    st.write("Mentor Joko Sancoyo")
+    st.write("Mentee Dimas Adhitya Suwarto")
+
+
 if option_2 == '':
     image = Image.open('assets/IMG-20210419-WA0112.jpg')
     st.image(image, caption='BPK Perwakilan Sumsel')
