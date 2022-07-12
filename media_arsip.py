@@ -48,9 +48,13 @@ with st.sidebar:
             ('', 'Sekretariat Perwakilan', 'Subbag Humas dan TU', 'Subbag SDM', 'Subbag Keuangan', 'Subbag Umum dan TI', 'Subbag Hukum'))
 
 
-    st.write("Program Aktualisasi Diklatsar CPNS BPK 2022")
-    st.write("Mentor Joko Sancoyo")
-    st.write("Mentee Dimas Adhitya Suwarto")
+    new_title = '<p style="font-family:sans-serif; color:Green; font-size: 20px;"> Program Aktualisasi Diklatsar CPNS BPK 2022 </p>'
+    st.markdown(new_title, unsafe_allow_html=True)
+    new_title2 = '<p style="font-family:sans-serif; color:Green; font-size: 20px;"> Mentor Joko Sancoyo </p>'
+    st.markdown(new_title2, unsafe_allow_html=True)
+    new_title3 = '<p style="font-family:sans-serif; color:Green; font-size: 20px;"> Mentee Dimas Adhitya Suwarto </p>'
+    st.markdown(new_title3, unsafe_allow_html=True)
+
 
 
 if option_2 == '':
