@@ -51,6 +51,14 @@ with st.sidebar:
     st.write("\n")
     st.write("\n")
     st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
     new_title = '<p style="font-family:sans-serif; font-size: 8px;"> Program Aktualisasi Diklatsar CPNS BPK 2022 </p>'
     st.markdown(new_title, unsafe_allow_html=True)
     new_title2 = '<p style="font-family:sans-serif; font-size: 8px;"> Mentor Joko Sancoyo </p>'
