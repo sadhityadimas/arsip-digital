@@ -4,4 +4,4 @@ pandas
 click==8
 pillow
 google-cloud-firestore
-bokeh==2.4.1
+bokeh
